@@ -5,6 +5,7 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 st.subheader("📂 Dataframe de Vendas")
+st.sidebar.markdown("Desenvolvido por [Laryssa Bueno](https://www.linkedin.com/in/laryssa-bueno-eng/)" )
 #=====================
 # Criando um dicionário de Dataframes
 #=====================
@@ -170,6 +171,7 @@ with aba5:
     '''
 
     st.code(query_visitas,language="sql")
+
 
 
 
