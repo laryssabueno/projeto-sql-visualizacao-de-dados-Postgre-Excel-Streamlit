@@ -11,7 +11,7 @@ st.subheader("📊 Dashboard de Vendas")
 # Criando um dicionário de Dataframes
 #=====================
 
-dfs = pd.read_excel("C:/Users/Laryssa Bueno/OneDrive/Curso Udemy SQL/Projeto SQL - Midori/Leads-Vendas.xlsx", sheet_name=None)
+dfs = pd.read_excel("Leads-Vendas.xlsx", sheet_name=None)
 
 #=====================
 # Lendo cada aba do Excel
@@ -265,3 +265,4 @@ with aba3:
 with aba4:
     st.plotly_chart(fig_visitas, theme="streamlit", use_container_width=True, key="visitas")
     st.write("**Dados referentes ao mês de Agosto de 2021.")
+
