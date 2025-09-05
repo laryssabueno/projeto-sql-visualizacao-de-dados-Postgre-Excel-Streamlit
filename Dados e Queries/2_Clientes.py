@@ -9,7 +9,7 @@ st.subheader("📂 Dataframe de Leads")
 # Criando um dicionário de Dataframes
 #=====================
 
-dfs = pd.read_excel('C:/Users/Laryssa Bueno/OneDrive/Curso Udemy SQL/Projeto SQL - Midori/Leads-Perfil.xlsx', sheet_name=None)
+dfs = pd.read_excel('Leads-Perfil.xlsx', sheet_name=None)
 
 #=====================
 # Lendo cada aba do Excel
@@ -207,4 +207,5 @@ with aba7:
     '''
 
     st.code(query_marcas_visitas,language="sql")
+
 
