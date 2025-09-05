@@ -11,8 +11,8 @@ st.subheader("📊 Dashboard de Perfil dos Clientes")
 #=====================
 # Criando um dicionário de Dataframes
 #=====================
-BASE_DIR = Path(__file__).parent
-dfs = pd.read_excel(BASE_DIR/"Data"/"Leads-Perfil.xlsx", sheet_name=None)
+REPO_ROOT = Path(__file__).parent.parent
+dfs = pd.read_excel(REPO_ROOT/"Data"/"Leads-Perfil.xlsx", sheet_name=None)
 
 #=====================
 # Lendo cada aba do Excel
@@ -210,6 +210,7 @@ with aba3:
 
 with aba4:
     st.plotly_chart(fig_marcas_visitas, theme="streamlit", use_container_width=True)
+
 
 
 
