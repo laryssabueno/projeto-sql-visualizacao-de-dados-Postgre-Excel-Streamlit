@@ -8,8 +8,8 @@ st.subheader("📂 Dataframe de Vendas")
 #=====================
 # Criando um dicionário de Dataframes
 #=====================
-BASE_DIR = Path(__file__).parent
-dfs = pd.read_excel(BASE_DIR/"Data"/"Leads-Vendas.xlsx", sheet_name=None)
+REPO_ROOT = Path(__file__).parent.parent
+dfs = pd.read_excel(REPO_ROOT/"Data"/"Leads-Vendas.xlsx", sheet_name=None)
 
 #=====================
 # Lendo cada aba do Excel
@@ -170,6 +170,7 @@ with aba5:
     '''
 
     st.code(query_visitas,language="sql")
+
 
 
 
