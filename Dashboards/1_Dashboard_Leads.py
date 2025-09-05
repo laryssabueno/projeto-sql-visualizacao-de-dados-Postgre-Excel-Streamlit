@@ -7,7 +7,7 @@ from plotly._subplots import make_subplots
 
 st.set_page_config(layout="wide")
 st.subheader("📊 Dashboard de Vendas")
-
+st.sidebar.markdown("Desenvolvido por [Laryssa Bueno](https://www.linkedin.com/in/laryssa-bueno-eng/)" )
 #=====================
 # Criando um dicionário de Dataframes
 #=====================
@@ -266,6 +266,7 @@ with aba3:
 with aba4:
     st.plotly_chart(fig_visitas, theme="streamlit", use_container_width=True, key="visitas")
     st.write("**Dados referentes ao mês de Agosto de 2021.")
+
 
 
 
