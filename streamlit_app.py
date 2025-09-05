@@ -1,7 +1,7 @@
 import streamlit as st
 
 def home():
-    st.page(layout="centered")
+    st.set_page_config(layout="centered")
     st.write("# Projeto SQL para Análise de Dados: do básico ao avançado! 💻")
     st.sidebar.markdown("Desenvolvido por [Laryssa Bueno](https://www.linkedin.com/in/laryssa-bueno-eng/)" )
 
@@ -47,6 +47,7 @@ pg = st.navigation(
 
 
 pg.run()
+
 
 
 
