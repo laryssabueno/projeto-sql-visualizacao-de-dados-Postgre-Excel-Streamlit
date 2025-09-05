@@ -32,7 +32,7 @@ Ao final foram desenvolvidas consultas SQL e uso de Excel como fonte de dados pa
 
 home_page = st.Page(home, title="Home", icon="🏡")
 dash_sales = st.Page("Dashboards/1_Leads.py", title = "Vendas", icon= "💰")
-dash_leads = st.Page("2_Clients.py", title = "Perfil Leads", icon= "👤")
+dash_leads = st.Page("Dashaboards/2_Clients.py", title = "Perfil Leads", icon= "👤")
 query_vendas = st.Page("Dados e Queries/1_Vendas.py", title = "Dataframe e Queries Vendas", icon= "📓")
 query_clientes = st.Page("Dados e Queries/2_Clientes.py", title = "Dataframe e Queries Leads", icon= "🗄")
 
@@ -46,3 +46,4 @@ pg = st.navigation(
 
 
 pg.run()
+
