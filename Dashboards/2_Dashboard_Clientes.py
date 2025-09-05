@@ -7,7 +7,7 @@ from plotly._subplots import make_subplots
 
 st.set_page_config(layout="wide")
 st.subheader("📊 Dashboard de Perfil dos Clientes")
-
+st.sidebar.markdown("Desenvolvido por [Laryssa Bueno](https://www.linkedin.com/in/laryssa-bueno-eng/)" )
 #=====================
 # Criando um dicionário de Dataframes
 #=====================
@@ -210,6 +210,7 @@ with aba3:
 
 with aba4:
     st.plotly_chart(fig_marcas_visitas, theme="streamlit", use_container_width=True)
+
 
 
 
