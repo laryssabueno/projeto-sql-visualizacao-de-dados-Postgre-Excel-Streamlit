@@ -1,3 +1,4 @@
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -10,8 +11,8 @@ st.subheader("📊 Dashboard de Vendas")
 #=====================
 # Criando um dicionário de Dataframes
 #=====================
-
-dfs = pd.read_excel("projeto-sql-visualizacao-de-dados-Postgre-Excel-Streamlit/Leads-Vendas.xlsx", sheet_name=None)
+BASE_DIR = Path(__file__).parent
+dfs = pd.read_excel(BASE_DIR/"Data"/"Leads-Vendas.xlsx", sheet_name=None)
 
 #=====================
 # Lendo cada aba do Excel
@@ -265,5 +266,6 @@ with aba3:
 with aba4:
     st.plotly_chart(fig_visitas, theme="streamlit", use_container_width=True, key="visitas")
     st.write("**Dados referentes ao mês de Agosto de 2021.")
+
 
 
