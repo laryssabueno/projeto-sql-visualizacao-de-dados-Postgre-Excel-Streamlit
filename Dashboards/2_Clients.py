@@ -11,7 +11,7 @@ st.subheader("📊 Dashboard de Perfil dos Clientes")
 # Criando um dicionário de Dataframes
 #=====================
 
-dfs = pd.read_excel('Leads-Perfil.xlsx', sheet_name=None)
+dfs = pd.read_excel('projeto-sql-visualizacao-de-dados-Postgre-Excel-Streamlit/Leads-Perfil.xlsx', sheet_name=None)
 
 #=====================
 # Lendo cada aba do Excel
@@ -209,4 +209,5 @@ with aba3:
 
 with aba4:
     st.plotly_chart(fig_marcas_visitas, theme="streamlit", use_container_width=True)
+
 
