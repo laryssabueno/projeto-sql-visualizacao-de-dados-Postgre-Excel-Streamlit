@@ -31,10 +31,10 @@ e muito mais!
 Ao final foram desenvolvidas consultas SQL e uso de Excel como fonte de dados para os dashboards e dataframes.""" )
 
 home_page = st.Page(home, title="Home", icon="🏡")
-dash_sales = st.Page("Dashboards/1_Leads.py", title = "Vendas", icon= "💰")
-dash_leads = st.Page("Dashboards/2_Clients.py", title = "Perfil Leads", icon= "👤")
-query_vendas = st.Page("Dados e Queries/1_Vendas.py", title = "Dataframe e Queries Vendas", icon= "📓")
-query_clientes = st.Page("Dados e Queries/2_Clientes.py", title = "Dataframe e Queries Leads", icon= "🗄")
+dash_sales = st.Page("Dashboards/1_Dashboard_Leads.py", title = "Vendas", icon= "💰")
+dash_leads = st.Page("Dashboards/2_Dashboard_Clientes.py", title = "Perfil Leads", icon= "👤")
+query_vendas = st.Page("Dados e Queries/1_Dataframe_Vendas.py", title = "Dataframe e Queries Vendas", icon= "📓")
+query_clientes = st.Page("Dados e Queries/2_Dataframe_Clientes.py", title = "Dataframe e Queries Leads", icon= "🗄")
 
 pg = st.navigation(
     {
@@ -46,5 +46,6 @@ pg = st.navigation(
 
 
 pg.run()
+
 
 
