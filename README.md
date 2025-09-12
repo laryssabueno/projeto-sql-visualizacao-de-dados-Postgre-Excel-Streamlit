@@ -7,7 +7,7 @@ Este é um aplicativo desenvolvido em **[Streamlit](https://streamlit.io/)** par
 ## 🔗 Acesse Online
 Você pode acessar a versão online diretamente pelo Streamlit Cloud:
 
-👉 [Clique aqui: Projeto SQL para Análise de Dados: do básico ao avançado!](https://seu-usuario-seu-app.streamlit.app)
+👉 [Clique aqui: Projeto SQL para Análise de Dados: do básico ao avançado!](https://projeto-sql-visualizacao-de-dados-postgre-excel-app.streamlit.app/)
 
 ---
 
